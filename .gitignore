@@ -1,2 +1,5 @@
 vene/
 .idea/
+
+**/__pycache__/
+*.pyc
