@@ -1,0 +1,4 @@
+DEBUG = False
+IS_DEVELOPMENT = True
+
+ALLOWED_HOSTS = ['*']
