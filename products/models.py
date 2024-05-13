@@ -28,8 +28,8 @@ class Product(models.Model):
 
     class Meta:
         db_table = 'products'
-        verbose_name = _('product')
-        verbose_name_plural = _('products')
+        verbose_name = _('Product')
+        verbose_name_plural = _('Products')
 
 
 class File(models.Model):
@@ -42,5 +42,5 @@ class File(models.Model):
 
     class Meta:
         db_table = 'files'
-        verbose_name = _('file')
-        verbose_name_plural = _('files')
+        verbose_name = _('File')
+        verbose_name_plural = _('Files')
