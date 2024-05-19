@@ -35,10 +35,11 @@ class MyUserAdmin(UserAdmin):
         return queryset, may_have_duplicates
 
 
-try:
-    admin.site.register(Group)
-except admin.sites.AlreadyRegistered:
-    pass
+# try:
+#     admin.site.register(Group)
+# except admin.sites.AlreadyRegistered:
+#     pass
+admin.site.unregister(Group)
 admin.site.register(Province)
 admin.site.register(User, MyUserAdmin)
 # admin.site.register(Site)
