@@ -1,8 +1,5 @@
-from django.shortcuts import render
+import random
 
-<<<<<<< HEAD
-# Create your views here.
-=======
 from django.core.cache import cache
 
 from rest_framework import status
@@ -87,4 +84,3 @@ class LogoutView(APIView):
 
         user_token.delete()
         return Response({'message': 'Logged out successfully'}, status=status.HTTP_200_OK)
->>>>>>> eb7f400 (Complete 'users' app and add Logout view and get and use JWT in viwes.urls.py and use it in Logout and viewing product list.)
