@@ -113,8 +113,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Authorization
 AUTH_USER_MODEL = 'users.User'
-<<<<<<< HEAD
-=======
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -169,9 +167,3 @@ CACHES = {
         'LOCATION': 'unique-snowflake',
     }
 }
-
-# Verification SMS
-TWILIO_ACCOUNT_SID = 'ACf384ecf762caf1da02e8c7792811fe51'
-TWILIO_AUTH_TOKEN = 'db1f01e3fc9d3ad9b800b5898808466e'
-# TWILIO_PHONE_NUMBER = 'your_twilio_phone_number'
->>>>>>> eb7f400 (Complete 'users' app and add Logout view and get and use JWT in viwes.urls.py and use it in Logout and viewing product list.)
