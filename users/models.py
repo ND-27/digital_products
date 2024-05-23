@@ -199,3 +199,14 @@ class Province(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class UserToken(models.Model):
+    user = models.ForeignKey(User, related_name=_('tokens'), on_delete=models.CASCADE)
+    device = models.ForeignKey(Device, related_name=_('tokens'), on_delete=models.CASCADE)
+    token = models.CharField(max_length=255)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        db_table = 'user_tokens'
+        unique_together = ('user', 'token')
